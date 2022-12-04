@@ -1,5 +1,2 @@
-require('base')
-require('highlights')
-require('plugins')
-require('maps')
-require('term')
+require('rsa-johan')
+
