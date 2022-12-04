@@ -1,4 +1,4 @@
---------- This is my current NEOVIM configuration ---------
+--------- My Current NEOVIM configuration ---------
 
 
 Use it if you are a noob!

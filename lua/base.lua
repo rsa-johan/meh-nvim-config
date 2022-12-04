@@ -8,8 +8,8 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 
 vim.opt.hlsearch = true
-vim.opt.laststatus = 2 
-vim.opt.shell = 'pwsh'
+vim.opt.laststatus = 2
+vim.opt.shell = 'C:\\Program Files\\PowerShell\\7\\pwsh.exe'
 vim.opt.inccommand = 'split'
 vim.opt.ignorecase = true
 vim.opt.smarttab = true
