@@ -9,7 +9,7 @@ vim.wo.relativenumber = true
 
 vim.opt.hlsearch = true
 vim.opt.laststatus = 2
-vim.opt.shell = 'C:\\Program Files\\PowerShell\\7\\pwsh.exe'
+vim.opt.shell = 'cmd'
 vim.opt.inccommand = 'split'
 vim.opt.ignorecase = true
 vim.opt.smarttab = true

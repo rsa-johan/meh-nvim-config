@@ -1,6 +1,4 @@
 local map = vim.api.nvim_set_keymap
-local term = vim.api.nvim_open_term
-
 local opts = { noremap = true, silent = true }
 
 map('n', '<C-a>', 'gg<S-v>G', opts)
@@ -49,8 +47,6 @@ map('n', '<Space>bd', '<Cmd>BufferOrderByDirectory<CR>', opts)
 map('n', '<Space>bl', '<Cmd>BufferOrderByLanguage<CR>', opts)
 map('n', '<Space>bw', '<Cmd>BufferOrderByWindowNumber<CR>', opts)
 
-map('n', '<Space>t', '<Cmd>terminal<CR>', opts)
-map('n', '<C-/>', "<Cmd>nerdcommenter#Comment('x', 'toggle')<CR>", opts)
 -- Other:
 -- :BarbarEnable - enables barbar (enabled by default)
 -- :BarbarDisable - very bad command, should never be used

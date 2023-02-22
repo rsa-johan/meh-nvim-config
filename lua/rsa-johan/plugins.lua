@@ -12,6 +12,9 @@ require('packer').startup(function()
 	}
 	use 'dinhhuy258/git.nvim'
 	use 'L3MON4D3/LuaSnip'
+	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+	  require("toggleterm").setup()
+	end}
 	use "williamboman/mason.nvim"
 	use 'williamboman/mason-lspconfig.nvim'
 	use 'folke/zen-mode.nvim'
@@ -32,8 +35,11 @@ require('packer').startup(function()
 	use 'onsails/lspkind.nvim'
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'hrsh7th/cmp-buffer'
+	use 'BurntSushi/ripgrep'
+	use 'sharkdp/fd'
 	use 'hrsh7th/cmp-path'
 	use 'hrsh7th/cmp-cmdline'
 	use 'hrsh7th/nvim-cmp'
+	use 'mattn/emmet-vim'
 
 end)

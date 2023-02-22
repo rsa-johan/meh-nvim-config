@@ -1,5 +1,4 @@
 require('rsa-johan.base')
 require('rsa-johan.highlights')
-require('rsa-johan.plugins')
 require('rsa-johan.maps')
-require('rsa-johan.term')
+require('rsa-johan.plugins')
