@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "C:\\Users\\SANJAY\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?.lua;C:\\Users\\SANJAY\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\SANJAY\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\SANJAY\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
-local install_cpath_pattern = "C:\\Users\\SANJAY\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\lua\\5.1\\?.so"
+local package_path_str = "C:\\Users\\SANJAY\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\share\\lua\\5.1\\?.lua;C:\\Users\\SANJAY\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\SANJAY\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\SANJAY\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
+local install_cpath_pattern = "C:\\Users\\SANJAY\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1713484068\\lib\\lua\\5.1\\?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -104,20 +104,20 @@ _G.packer_plugins = {
     path = "C:\\Users\\SANJAY\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
-  ["colorbuddy.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\SANJAY\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\colorbuddy.nvim",
-    url = "https://github.com/tjdevries/colorbuddy.nvim"
-  },
   ["emmet-vim"] = {
     loaded = true,
     path = "C:\\Users\\SANJAY\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\emmet-vim",
     url = "https://github.com/mattn/emmet-vim"
   },
-  ["git.nvim"] = {
+  fd = {
     loaded = true,
-    path = "C:\\Users\\SANJAY\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\git.nvim",
-    url = "https://github.com/dinhhuy258/git.nvim"
+    path = "C:\\Users\\SANJAY\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fd",
+    url = "https://github.com/sharkdp/fd"
+  },
+  ["formatter.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\SANJAY\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\formatter.nvim",
+    url = "https://github.com/mhartington/formatter.nvim"
   },
   ["lspkind.nvim"] = {
     loaded = true,
@@ -139,11 +139,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\SANJAY\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["neosolarized.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\SANJAY\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neosolarized.nvim",
-    url = "https://github.com/svrana/neosolarized.nvim"
-  },
   nerdcommenter = {
     loaded = true,
     path = "C:\\Users\\SANJAY\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nerdcommenter",
@@ -153,6 +148,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\SANJAY\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "C:\\Users\\SANJAY\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -179,6 +179,21 @@ _G.packer_plugins = {
     path = "C:\\Users\\SANJAY\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  prettierd = {
+    loaded = true,
+    path = "C:\\Users\\SANJAY\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\prettierd",
+    url = "https://github.com/fsouza/prettierd"
+  },
+  ripgrep = {
+    loaded = true,
+    path = "C:\\Users\\SANJAY\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\ripgrep",
+    url = "https://github.com/BurntSushi/ripgrep"
+  },
+  ["solarized-osaka.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\SANJAY\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\solarized-osaka.nvim",
+    url = "https://github.com/craftzdog/solarized-osaka.nvim"
+  },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
     path = "C:\\Users\\SANJAY\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope-file-browser.nvim",
@@ -194,6 +209,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\SANJAY\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["vim-be-good"] = {
+    loaded = true,
+    path = "C:\\Users\\SANJAY\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-be-good",
+    url = "https://github.com/ThePrimeagen/vim-be-good"
+  },
+  vimtex = {
+    loaded = true,
+    path = "C:\\Users\\SANJAY\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vimtex",
+    url = "https://github.com/lervag/vimtex"
   },
   ["zen-mode.nvim"] = {
     loaded = true,

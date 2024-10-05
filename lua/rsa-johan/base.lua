@@ -18,4 +18,5 @@ vim.opt.breakindent = true
 vim.opt.smartindent = true
 vim.opt.path:append { '**' }
 vim.opt.wildignore:append { '*/node_modules/*', '*/target/*' }
-vim.opt.ch = 0
+vim.cmd [[colorscheme solarized-osaka]]
+--vim.opt.ch = 0

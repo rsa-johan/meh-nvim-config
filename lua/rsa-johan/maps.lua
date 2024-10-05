@@ -2,13 +2,16 @@ local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
 map('n', '<C-a>', 'gg<S-v>G', opts)
--- Move Half page Up/Down 
+-- Move Half page Up/Down
 map('n', '<C-d>', '<C-d>zz', opts)
 map('n', '<C-u>', '<C-u>zz', opts)
 
 -- Move through search results
-map('n', 'n', 'nzzv', opts)
-map('n', 'N', 'Nzzv', opts)
+map('n', 'n', 'nzz', opts)
+map('n', 'N', 'Nzz', opts)
+
+--Non-replaced buffer
+map('n', '<Space>p', '\"_dp', opts)
 
 -- Move to previous/next
 map('n', '<A-,>', '<Cmd>BufferPrevious<CR>', opts)
@@ -51,5 +54,5 @@ map('n', '<Space>bw', '<Cmd>BufferOrderByWindowNumber<CR>', opts)
 -- :BarbarEnable - enables barbar (enabled by default)
 -- :BarbarDisable - very bad command, should never be used
 -- File/DIR manager
-map('n','<C-n>', '<Cmd>e new<CR>', opts) 
+map('n', '<C-n>', '<Cmd>e new<CR>', opts)
 map('n', '<Space>r', '<Cmd>saveas<CR>', opts)
