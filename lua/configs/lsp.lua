@@ -45,19 +45,19 @@ protocol.CompletionItemKind = {
 	'', -- TypeParameter
 }
 
---[[local capabilities = require('cmp_nvim_lsp').default_capabilities()
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 nvim_lsp.pyright.setup {
-    filetypes = { "python" },
+	filetypes = { "python" },
 	cmd = { "pyright-langserver", "--stdio" },
 	on_attach = function(client, bufnr)
 		enable_format_on_save(client, bufnr)
 	end,
-}]] --
+}
 
 --Lua LSP for Neovim
 nvim_lsp.lua_ls.setup {
-	--capabilities = capabilities
+	capabilities = capabilities,
 	on_attach = function(client, bufnr)
 		enable_format_on_save(client, bufnr)
 	end,
