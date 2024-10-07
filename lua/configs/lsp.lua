@@ -47,9 +47,19 @@ protocol.CompletionItemKind = {
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+--Python
 nvim_lsp.pyright.setup {
 	filetypes = { "python" },
 	cmd = { "pyright-langserver", "--stdio" },
+	on_attach = function(client, bufnr)
+		enable_format_on_save(client, bufnr)
+	end,
+}
+
+--MarkDown
+nvim_lsp.marksman.setup {
+	filetypes = { "markdown", "markdown.mdx" },
+	cmd = { "marksman", "server" },
 	on_attach = function(client, bufnr)
 		enable_format_on_save(client, bufnr)
 	end,
