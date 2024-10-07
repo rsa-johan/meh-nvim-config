@@ -1,3 +1,3 @@
-##Lazy setup using Lazy.nvim
+## Lazy setup using Lazy.nvim
 
--- still a noob setup, use it if you are lazy
+> still a noob setup, use it if you are lazy
