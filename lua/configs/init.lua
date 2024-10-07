@@ -1,3 +1,3 @@
 require('configs.lsp')
---require('configs.luasnip')
---require('configs.completion')
+require('configs.lspsnip')
+require('configs.completion')

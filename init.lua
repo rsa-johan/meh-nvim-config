@@ -1,2 +1,2 @@
-require("rsa-johan")
-
+require('rsa-johan')
+require('configs')
