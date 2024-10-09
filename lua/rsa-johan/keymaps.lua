@@ -5,3 +5,6 @@ local opts = { noremap = true, silent = true }
 map('n', '<C-d>', '<C-d>zz', opts)
 map('n', '<C-u>', '<C-u>zz', opts)
 
+--easy term close
+map('t', '<Esc>', '<C-\\><C-n>:q', opts)
+map('t', '<C-l>', '<C-\\><C-n>', opts)

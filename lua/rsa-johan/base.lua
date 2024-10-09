@@ -25,3 +25,12 @@ vim.opt.breakindent = true
 vim.opt.smartindent = true
 
 vim.opt.wildignore:append { '*/node_modules/*', '*/target/*' }
+
+--netrw-noload
+vim.g.loaded_netrw = true
+vim.g.loaded_netrwPlugin = true
+
+--deno codefencing
+vim.g.markdown_fenced_languages = {
+	"ts=typescript"
+}

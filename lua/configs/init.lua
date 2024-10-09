@@ -1,3 +1,5 @@
 require('configs.lsp')
 require('configs.lspsnip')
 require('configs.completion')
+require('configs.telescopey')
+require('configs.tabs')
